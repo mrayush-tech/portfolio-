@@ -1,180 +1,158 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3KSYRTXEN"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3KSYRTXEN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        gtag('config', 'G-F3KSYRTXEN');
-    </script>
+  gtag('config', 'G-F3KSYRTXEN');
+</script>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayush Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
-
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <h2>Ayush Portfolio</h2>
+<nav>
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <h2>Ayush Portfolio</h2>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
-        <img src="profile.jpg.png" alt="Profile">
+    <a href="resume.pdf" download class="resume-btn">
+        Download CV
+    </a>
 
-        <h1>Ayush Kumar Srivastava</h1>
+</nav>
 
-       <p>
+<section class="hero">
+    
+    <img src="profile.jpg.png" alt="Profile">
+    <h1>Ayush Kumar Srivastava</h1>
+    <p>
 Aspiring Software Developer with expertise in Java, Spring Boot, SQL, and Web Development.
 </p>
 
-        <button onclick="showMessage()">
-            Hire Me
-        </button>
+    <button onclick="showMessage()">Hire Me</button>
+</section>
 
-    </section>
+<section id="about">
+    <h2>About Me</h2>
 
-    <!-- About -->
-    <section id="about">
+    <p>
+Hi, I'm Ayush, a MCA student and aspiring Software Developer.<br><br>
 
-        <h2>About Me</h2>
+I enjoy building web applications, solving programming problems,
+and learning new technologies.<br><br>
 
-        <p>
-            Hi, I'm Ayush, an MCA student and aspiring Software Developer.
-            <br><br>
+My key skills include Java, Python, SQL, Spring Boot,
+HTML, CSS, and JavaScript.<br><br>
 
-            I enjoy building web applications, solving programming problems,
-            and learning new technologies.
-            <br><br>
+I am always eager to learn, grow, and take on new challenges.
+</p>
+    
 
-            My key skills include Java, Python, SQL, Spring Boot,
-            HTML, CSS, and JavaScript.
-            <br><br>
+    <div class="social-links">
 
-            I am always eager to learn, grow, and take on new challenges.
-        </p>
+    <a href="https://linkedin.com/in/ayushhsri77/"
+       class="social-link">
+       <i class="fab fa-linkedin"></i>
+    </a>
 
-        <div class="social-links">
+    <a href="https://github.com/mrayush-tech"
+       class="social-link">
+       <i class="fab fa-github"></i>
+    </a>
 
-            <a href="https://linkedin.com/in/ayushhsri77/"
-                target="_blank"
-                class="social-link">
+</div>
+</section>
 
-                <i class="fab fa-linkedin"></i>
+<section id="skills">
+    <h2>Skills</h2>
 
-            </a>
+    <div class="skill">Java</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">Python</div>
+    <div class="skill">JavaScript</div>
+    <!-- <div class="skill">NumPy</div> -->
+    <!-- <div class="skill">Pandas</div> -->
+</section>
 
-            <a href="https://github.com/mrayush-tech"
-                target="_blank"
-                class="social-link">
+<section id="projects">
+    <h2>Projects</h2>
 
-                <i class="fab fa-github"></i>
+    <div class="project-container">
 
-            </a>
-
+        <div class="card">
+            <h3>EduNova – Full-Stack EdTech Platform</h3>
+            <p>
+                Built a full-stack educational platform with course management,
+                authentication and database integration.
+            </p>
         </div>
 
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-
-        <h2>Skills</h2>
-
-        <div class="skill">Java</div>
-        <div class="skill">Python</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Spring Boot</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="project-container">
-
-            <div class="card">
-                <h3>EduNova – Full-Stack EdTech Platform</h3>
-
-                <p>
-                    Built a full-stack educational platform with course
-                    management, authentication and database integration.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>AI-Powered Chatbot</h3>
-
-                <p>
-                    Intelligent chatbot with real-time responses using AI models.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Portfolio Website</h3>
-
-                <p>
-                    Responsive portfolio using HTML, CSS and JavaScript.
-                </p>
-            </div>
-
+        <div class="card">
+            <h3>AI-Powered Chatbot</h3>
+            <p>
+                Intelligent chatbot with real-time responses using AI models.
+            </p>
         </div>
 
-    </section>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>
+                Responsive portfolio using HTML, CSS and JavaScript.
+            </p>
+        </div>
 
-    <!-- Contact -->
-    <section id="contact">
+    </div>
+</section>
+<div class="hero-buttons">
 
-        <h2>Contact</h2>
+    <a href="resume.pdf" target="_blank" class="btn btn-view">
+        View Resume
+    </a>
 
-        <p>Email: mr100ayush@gmail.com</p>
+    <a href="resume.pdf" download class="btn btn-download">
+        Download CV
+    </a>
 
-        <p>Phone: +91 9170571791</p>
+</div>
 
-    </section>
+<section id="contact">
+    <h2>Contact</h2>
 
-    <!-- Footer -->
-    <footer>
+    <p>Email: mr100ayush@gmail.com</p>
+    <p>Phone: +91 9170571791</p>
 
-        <p>
-            © 2026 Ayush Kumar Srivastava | Portfolio
-        </p>
+    <!-- <button id="darkBtn">Dark Mode</button> -->
+</section>
 
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
-```
+<footer>
+    © 2026 Ayush Kumar Srivastava | Portfolio
+</footer>
 
-
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
